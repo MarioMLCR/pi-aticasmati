@@ -1,0 +1,56 @@
+body 
+    background: #f2f2f2
+    font-family: 'Saira', Arial, Helvetica, sans-serif
+
+@import header
+@import categories
+@import redes-footer
+@import modal 
+
+
+@media screen and ( max-width: 822px )
+    .categories-box
+        .category-one,
+        .category-two,
+        .category-three,
+        .category-four
+            justify-content: center
+
+@media screen and ( max-width: 742px )
+    .header
+        flex-direction: column
+        flex-wrap: wrap
+        align-self: center
+        padding-left: 0
+        padding-right: 0
+        h2 
+            margin-top: 15px
+        .menu 
+            text-align: center
+            margin: auto
+            width: 100%  
+            display: flex
+            justify-content: space-between
+            a 
+                margin: 0 
+                flex-grow: 1
+
+@media screen and ( max-width: 530px )
+    .categories-box
+        width: 100%
+    .principal
+        .content
+            width: 80%
+
+@media screen and ( max-width: 425px )
+    .selectors
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        .category-name
+            margin-bottom: 5px  
+    
+    
+
+
+    
