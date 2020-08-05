@@ -40,7 +40,8 @@
             display: flex
 
     input[id="1"]
-        &:checked ~ .cat-one
+        &:checked ~ .selectors .cat-one
+            transition: .3s ease
             background: #FFCB47 
             color: #2f2f2f
 
@@ -54,7 +55,7 @@
             display: flex
 
     input[id="2"]
-        &:checked ~ .cat-two
+        &:checked ~ .selectors .cat-two
             background: #FFCB47 
             color: #2f2f2f
     
@@ -74,9 +75,8 @@
             display: flex
 
     input[id="3"]
-        &:checked ~ .cat-three
+        &:checked ~ .selectors .cat-three
             background: #FFCB47 
-
             color: #2f2f2f
     
     input[id="3"]
@@ -84,7 +84,6 @@
             opacity: 0
             position: absolute
             display: none
-
 
     // CATEGORY NUMBER FOUR CHECKED
     input[id="4"]
@@ -96,7 +95,7 @@
             display: flex
 
     input[id="4"]
-        &:checked ~ .cat-four
+        &:checked ~ .selectors .cat-four
             background: #FFCB47 
             color: #2f2f2f
     
@@ -106,19 +105,17 @@
             position: absolute
             display: none
 
-
-
-
-
-
     .category-one
         top: 40px
         position: relative
         width: 100%
         height: auto
+        opacity: 1
+        color: #3d454d
+        transition: .3s
+        // FLEX PROPERTIES
         display: flex
         flex-wrap: wrap
-        opacity: 1
         
         .items
             background: white 
@@ -129,31 +126,29 @@
             border-radius: 5px
             position: relative
             margin: 10px 10px
-            flex-grow: 1
             box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+            transition: all .3s ease
+            flex-grow: 1
+            &:hover
+                transition: all .3s ease
+                transform: scale(1.1)
 
-            a 
+            .notice
+                font-size: 12px
                 position: absolute
-                width: 80px
-                display: inline-block
-                text-decoration: none
-                border-radius: 3px
-                background: #FFCB47
-                padding: 5px 5px
+                padding: 10px 10px
                 color: #2f2f2f
-                margin: 0px 0px 5px 5px
                 bottom: 0%
                 text-align: center
+            a 
+                color: #2f2f2f
             
-
             .container-img
-                border-radius: 5px
+                border-radius: 5px 5px 0 0
                 width: 100%
                 height: 120px
+                overflow: hidden
                 margin-bottom: 10px
-                img 
-                    margin: auto
-                    border-radius: 5px 5px 0 0
 
             .container-info
                 margin: 0px 5px 5px 5px
@@ -183,30 +178,29 @@
             border-radius: 5px
             position: relative
             margin: 10px 10px
-            flex-grow: 1
             box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+            transition: all .3s ease
+            flex-grow: 1
+            &:hover
+                transition: all .3s ease
+                transform: scale(1.1)
 
-
-            a 
+            .notice
+                font-size: 12px
                 position: absolute
-                width: 80px
-                display: inline-block
-                text-decoration: none
-                border-radius: 3px
-                background: #FFCB47
-                padding: 5px 5px
+                padding: 10px 10px
                 color: #2f2f2f
-                margin: 0px 0px 5px 5px
                 bottom: 0%
                 text-align: center
+            a 
+                color: #2f2f2f
             
-
             .container-img
+                border-radius: 5px 5px 0 0
                 width: 100%
                 height: 120px
+                overflow: hidden
                 margin-bottom: 10px
-                img 
-                    border-radius: 5px 5px 0 0
 
             .container-info
                 margin: 0px 5px 5px 5px
@@ -236,29 +230,29 @@
             border-radius: 5px
             position: relative
             margin: 10px 10px
-            flex-grow: 1
             box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+            transition: all .3s ease
+            flex-grow: 1
+            &:hover
+                transition: all .3s ease
+                transform: scale(1.1)
 
-            a 
+            .notice
+                font-size: 12px
                 position: absolute
-                width: 80px
-                display: inline-block
-                text-decoration: none
-                border-radius: 3px
-                background: #FFCB47
-                padding: 5px 5px
+                padding: 10px 10px
                 color: #2f2f2f
-                margin: 0px 0px 5px 5px
                 bottom: 0%
                 text-align: center
+            a 
+                color: #2f2f2f
             
-
             .container-img
+                border-radius: 5px 5px 0 0
                 width: 100%
                 height: 120px
+                overflow: hidden
                 margin-bottom: 10px
-                img 
-                    border-radius: 5px 5px 0 0
 
             .container-info
                 margin: 0px 5px 5px 5px
@@ -288,31 +282,29 @@
             border-radius: 5px
             position: relative
             margin: 10px 10px
-            flex-grow: 1
             box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+            transition: all .3s ease
+            flex-grow: 1
+            &:hover
+                transition: all .3s ease
+                transform: scale(1.1)
 
-            a 
+            .notice
+                font-size: 12px
                 position: absolute
-                width: 80px
-                display: inline-block
-                text-decoration: none
-                border-radius: 3px
-                background: #FFCB47
-                padding: 5px 5px
+                padding: 10px 10px
                 color: #2f2f2f
-                margin: 0px 0px 5px 5px
                 bottom: 0%
                 text-align: center
+            a 
+                color: #2f2f2f
             
-
             .container-img
+                border-radius: 5px 5px 0 0
                 width: 100%
                 height: 120px
+                overflow: hidden
                 margin-bottom: 10px
-                img 
-                    border-radius: 5px 5px 0 0
-
-
 
             .container-info
                 margin: 0px 5px 5px 5px
